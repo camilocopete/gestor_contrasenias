@@ -1,0 +1,7 @@
+{
+  "name": "gestorContraseñas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
