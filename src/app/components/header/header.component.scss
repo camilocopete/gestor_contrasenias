@@ -1,0 +1,18 @@
+    .logo{
+        width: 80px;
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        padding: 10px;
+    }
+
+    .login-form{
+        position: absolute;
+        z-index: 1000;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        &.hidden{
+            display: none;
+        }
+    }

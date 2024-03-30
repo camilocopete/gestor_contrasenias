@@ -1,16 +1,32 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { PasswordCreateComponent } from './pages/password-create/password-create.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ShowPasswordComponent } from './pages/show-password/show-password.component'; 
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
-  }
+    path: 'home',
+    component: HomeComponent,
+  },
+  {
+    path: 'create',
+    component: PasswordCreateComponent
+  },
+  {
+    path:'login',
+    component: LoginComponent
+  },
+  {
+    path: 'show',
+    component: ShowPasswordComponent
+  },
 ];
 
 @NgModule({

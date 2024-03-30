@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyA-MV7EazuCcbyubf1hg2o3n50MkiStyXw",
+    authDomain: "gat-pass.firebaseapp.com",
+    projectId: "gat-pass",
+    storageBucket: "gat-pass.appspot.com",
+    messagingSenderId: "347673095178",
+    appId: "1:347673095178:web:c24850ddb116194f5b43f3",
+    measurementId: 'TU_MEASUREMENT_ID' // Opcional
+  }
 };
 
 /*
